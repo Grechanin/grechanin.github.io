@@ -54,3 +54,7 @@ body, a {
 	display: block;
 	position: relative;
 }
+.my-button {
+	background-color: transparent;
+	border-color: white;
+}
