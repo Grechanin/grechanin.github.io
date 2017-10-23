@@ -1,12 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 html, body {
-	width: 100%;
-	height: 100%;
-	box-sizing: border-box;
+			height: 100%;
+			max-height: 100%;
+			max-width: 100%;
+			width: 100%;
+			margin: 0;
+			color: #fff;
+			font-size: 18px;
+			position: relative;
 }
-body {
-  position: relative;
+
+h1 {
+	font-size: 2.8em;
+	font-weight: 900;
+	font-family: 'Roboto', sans-serif;
+	margin: 5% 0 5% 0;
+	line-height: 1.5;
+}
+
+a {
+	color: #fff;
+}
+
+.about-us p {
+	font-size: 1.4em;
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 5%;
+}
+p {
+	font-size: 1.1em;
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 5%;
 }
 /* background images */
+
 .background-image-overlay {
 	position: fixed;
 	display: block;
@@ -17,106 +44,64 @@ body {
 	background: url(../img/background-image-overlay.png) repeat;
 	z-index: -1;
 }
-#outer-background-image {
+#outer_background_container {
+	display: block;
 	position: fixed;
-	min-width: 100%;
 	min-height: 100%;
-	background-image: url(../img/bg01.jpg);
-	background-position: center;
-	background-size: cover;
+	min-width: 100%;
 	z-index: -2;
+	top: 0;
+	left: 0;
 }
-/*#outer_background_container .background-img img {
-	position: absolute;
+#outer_background_container .background-img img {
+	position: fixed;
 	margin: 0;
 	padding: 0;
-	top: -10%;
-}*/
-
-#wrapper, .about-us, .contact-us, .what-we-do, .our-history {
+	top: -70px;
+}
+section {
+	display: block;
 	height: 100%;
+	width: 100%;
 }
 
-body, a {
-	color: white;
-	box-sizing: border-box;
-	font-size: 18px;
-	font-weight: 300;
-	font-family: 'Roboto', sans-serif;
-}
 #left-sidebar {
 	position: fixed;
-	top: 0%;
 	height: 100%;
-	width: 13%;
-	background: linear-gradient(to bottom, rgba(0,0,0,0.29) 0%,rgba(0,0,0,0) 78%,rgba(0,0,0,0) 100%);
+	width: 12%;
+	top: 10%;
 }
-.logo img {
-	padding: 20% 10% 16% 10%;
+#left-sidebar .logo {
+	padding: 0px 0 40px 0;
 }
-.about-us h1, .our-history h1, .what-we-do h1, .contact-us h1 {
-	font-family: 'Roboto', sans-serif;
-	font-size: 3.3em;
-	font-weight: 900;
-}
-.about-us p {
-	font-family: 'Roboto', sans-serif;
-	font-size: 1.4em;
-	font-weight: 200;
-	margin: 1em 0;
-	line-height: 1.5;
-}
-.our-history p, .what-we-do p, .contact-us p, h5 {
-	font-family: 'Roboto', sans-serif;
-	font-size: 1.1em;
-	font-weight: 200;
-	margin: 1em 0;
-	line-height: 1.5;
-}
-.vcenter {
-	display: table;
-}
-.vcenter .row {
-  display: table-cell;
-  vertical-align: middle;
+#wrapper {
+	height: 100%;
+	display: block;
 }
 
-.button {
-	padding: 1em 2em;
-	border: 1px solid white;
-	border-radius: 0;
+.my-button {
+	background-color: transparent;
+	border-color: white;
+
 }
-.button a{
-	text-decoration: none;
+
+.nav>li>a:hover {
+	background: rgba(0,0,0,0.4);
 	color: #fff;
 }
-.button:hover {
-	text-decoration: none;
-	color: black;
-	background-color: #fff;
-	transition: 0.5s;
-}
 
-.grid p {
-	font-family: 'Roboto', sans-serif;
+.nav>li>a {
 	font-size: 0.9em;
-	font-weight: 200;
-	margin: 1em 0;
-	line-height: 1.5;
-}
-.grid h5 {
-	margin-top: 0;
-}
-.grid .icon {
-	text-align: center;
-	font-size: 3.1em;
-	margin: 10px 0;
+	line-height: 1;
+	text-transform: lowercase;
+	padding: 7px 10px;
 }
 
+li.active>a {
+	background: rgba(0,0,0,0.2);
+	font-weight: bold;
+}
 
-/* 22html */
-.navbar-customize {
-	background-color: transparent;
-	border-color: transparent;
-	background-image: none;
+a, body {
+	transition: all 0.4s;
 }
