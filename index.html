@@ -27,33 +27,30 @@
     <div id="outer-background-image"></div>
 
     <div id="wrapper" class="container">
-
-      <!--Left sidebar + logo-->
-      <div id="left-sidebar">
+      
+      <!-- Left sidebar-->
+      <div id="left-sidebar" class="hidden-xs">
           <div class="logo">
               <a href="#wrapper"><img src="assets/img/logo.png" class="img-responsive center-block" alt="logo"></a>
           </div>
 
-          <!--Menu icon for smaler viewports-->
-          <div id="mobile-menu-icon" class="visible-xs" onclick="toggle_main_menu();">
-              <span class="glyphicon glyphicon-th"></span>
-          </div>
+          <!-- Menu Icon for smoller viewports-->
+          <div id="mobile-menu-icon" class="visible-xs" onclick="toggle_main_menu();"><span class="glyphicon glyphicon-th"></span></div>
 
-          <!--Main menu-->
-          <div id="main-menu" class="main-menu text-center hidden-xs">
+          <div id="main-menu" class="main-menu text-center">
            
-                  <ul class="nav nav-stacked">
-                      <li><a href="#second-slide">our history</a></li>
-                      <li><a href="#third-slide">what we do</a></li>
-                      <li><a href="#fouth-slide">contact us</a></li>
+                  <ul id="menu-items" class="nav nav-stacked">
+                      <li id="menu-item-history"><a href="#second-slide">our history</a></li>
+                      <li id="menu-item-text"><a href="#third-slide">what we do</a></li>
+                      <li id="menu-item-contact"><a href="#fouth-slide">contact us</a></li>
                   </ul>
            
           </div>
       </div>
 
-      <section id="first-slide" class="about-us">
+      <section id="first-slide" class="about-us clearfix">
         <div class="row">
-          <div class="col-sm-offset-3 col-sm-9 col-md-offset-4 col-md-8">
+          <div class="col-md-8 col-md-offset-4 col-sm-8 col-sm-offset-4">
             <article id="about-us" class="text-right">
               <h1>Transforming Big Companies<br> One Startup at a Time</h1>
               <p>We're a team of entrepreneurs that help big companies start up entirely new lines of digital business. We do it  by designing, building and launching awesome software. Software that improves life for consumers. Software that revamps how brands are perceived. Software that helps companies grow</p>
@@ -63,9 +60,9 @@
         </div>        
       </section>
 
-      <section id="second-slide" class="our-history vcenter">
+      <section id="second-slide" class="our-history vcenter clearfix" data-custom-background-img="assets/img/bg02.jpg">
         <div class="row">
-          <div class="col-sm-offset-3 col-sm-9 col-md-offset-4 col-md-8">
+          <div class="col-md-8 col-md-offset-4 col-sm-8 col-sm-offset-4">
             <article id="our-history" class="text-right">
               <h1>Powerful Innovation</h1>
               <p>Our history is defined by our results, working with companies like CBS, Experian, Sony, Cricket Wireless, Madison Square Garden, Comcast, and many others to build apps and platforms that help transform their businesses. We know what it means to step into the unknown, and we know the dedication it takes to succeed when you’re there. On each and every project, we’re all-in.</p>
@@ -76,9 +73,9 @@
         </div>
       </section>
 
-      <section id="third-slide" class="what-we-do">
+      <section id="third-slide" class="what-we-do clearfix">
           <div class="row">
-              <div class="col-sm-offset-3 col-sm-9 col-md-offset-4 col-md-8">
+              <div class="col-md-8 col-md-offset-4 col-sm-8 col-sm-offset-4">
                   <article id="what-we-do" class="text-right">
                       <h1>Bringing Ideas to Life</h1>
                       <p>We focus on new ways of using technology to turn your insights into new digital products. Navigating the waters of innovation in order to build and launch things that really work. From mobile apps to scalable back-ends, our efforts have driven over $1.5b in incremental revenue for our clients and reach millions of consumers every single day.</p>
@@ -86,16 +83,15 @@
                           <div class="row text-left">
                             <div class="col-md-6">
                               <div class="row">
-                                <div class="col-md-3 col-sm-3 col-xs-3"><span class="icon glyphicon glyphicon-pencil"></span></div>
-                                <div class="col-md-9 col-sm-9 col-xs-9"><h5><b>Product Design</b></h5>
-                                <p>From information architecture to full-blown user interfaces, our process leaves little to chance.</p>
-                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-2"><span class="icon glyphicon glyphicon-pencil"></span></div>
+                                <div class="col-md-9 col-sm-9 col-xs-10""><h5><b>Product Design</b></h5>
+                                <p>From information architecture to full-blown user interfaces, our process leaves little to chance.</p></div>
                               </div>
                             </div>
                             <div class="col-md-6">
                               <div class="row">
-                                <div class="col-md-3 col-sm-3 col-xs-3"><span class="icon glyphicon glyphicon-phone"></span></div>
-                                <div class="col-md-9 col-sm-9 col-xs-9"><h5><b>Software Development</b></h5>
+                                <div class="col-md-3 col-sm-3 col-xs-2"><span class="icon glyphicon glyphicon-phone"></span></div>
+                                <div class="col-md-9 col-sm-9 col-xs-10"><h5><b>Software Development</b></h5>
                                 <p>We leverage advanced technology and preexisting IP to lower risk and improve speed-to-market.</p></div>
                               </div>
                             </div>
@@ -103,15 +99,15 @@
                           <div class="row text-left">
                             <div class="col-md-6">
                               <div class="row">
-                                <div class="col-md-3 col-sm-3 col-xs-3"><span class="icon glyphicon glyphicon-new-window"></span></div>
-                                <div class="col-md-9 col-sm-9 col-xs-9"><h5><b>Collaborative Stand-Up</b></h5>
+                                <div class="col-md-3 col-sm-3 col-xs-2"><span class="icon glyphicon glyphicon-new-window"></span></div>
+                                <div class="col-md-9 col-sm-9 col-xs-10"><h5><b>Collaborative Stand-Up</b></h5>
                                 <p>We manage product launch and service handover to ensure a seamless transition from our dev to your ops.</p></div>
                               </div>
                             </div>
                             <div class="col-md-6">
                               <div class="row">
-                                <div class="col-md-3 col-sm-3 col-xs-3"><span class="icon glyphicon glyphicon-refresh"></span></div>
-                                <div class="col-md-9 col-sm-9 col-xs-9"><h5><b>Continuous Innovation</b></h5>
+                                <div class="col-md-3 col-sm-3 col-xs-2"><span class="icon glyphicon glyphicon-refresh"></span></div>
+                                <div class="col-md-9 col-sm-9 col-xs-10"><h5><b>Continuous Innovation</b></h5>
                                 <p>We help maximize your investment by staying involved with ongoing, iterative product development.</p></div>
                               </div>
                             </div>
@@ -122,9 +118,9 @@
           </div>
       </section>
 
-      <section id="fouth-slide" class="contact-us vcenter">
+      <section id="fouth-slide" class="contact-us vcenter clearfix">
           <div class="row">
-              <div class="col-sm-offset-3 col-sm-9 col-md-offset-4 col-md-8">
+              <div class="col-md-8 col-md-offset-4 col-sm-8 col-sm-offset-4">
                   <article id="contact-us" class="text-right">
                       <h1>Contact</h1>
                       <p>We keep our focus on a small number of projects, so we typically work on a referral basis only. However if you’re interested in speaking with someone about a project that you think might fit, shoot us an email at info@WeSeeDragons.com, or call us at 310.361.5700. We’re always up for a good conversation.</p>
@@ -140,6 +136,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+  $(document).scroll(function(){
+    var history = $('#menu-item-history');
+    var text = $('#menu-item-text');
+    var contact = $('#menu-item-contact');
+    if ('history.hasClass('active')')
+      {$('#outer-background-image').style.backgroundImage = "url(../img/bg02.jpg)" }
+  });
+});
+    </script>
 
   </body>
 </html>
