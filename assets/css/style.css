@@ -26,6 +26,19 @@ body {
 	background-size: cover;
 	z-index: -2;
 }
+
+/*li#menu-item-history.active #outer-background-image {
+	background-image: url(../img/bg02.jpg);
+}
+
+/*li#menu-item-text.active {
+	background-image: url(../img/bg03.jpg);
+}
+
+li#menu-item-contact.active {
+	background-image: url(../img/bg04.jpg);
+}*/
+
 /*#outer_background_container .background-img img {
 	position: absolute;
 	margin: 0;
@@ -33,9 +46,6 @@ body {
 	top: -10%;
 }*/
 
-#wrapper, .about-us, .contact-us, .what-we-do, .our-history {
-	height: 100%;
-}
 
 body, a {
 	color: white;
@@ -49,7 +59,7 @@ body, a {
 	top: 0%;
 	height: 100%;
 	width: 13%;
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.1) 90%, rgba(0, 0, 0, 0) 100%);
+	background: linear-gradient(to bottom, rgba(0,0,0,0.25) 30%,rgba(0,0,0,0.1) 70%,rgba(0,0,0,0) 100%);
 }
 .logo img {
 	padding: 20% 10% 16% 10%;
