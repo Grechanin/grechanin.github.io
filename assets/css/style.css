@@ -46,8 +46,8 @@ li#menu-item-contact.active {
 	top: -10%;
 }*/
 
-#wrapper, .about-us, .contact-us, .what-we-do, .our-history {
-	height: 100%;
+.about-us, .contact-us, .what-we-do, .our-history {
+	min-height: 100%;
 }
 
 body, a {
