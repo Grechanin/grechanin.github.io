@@ -226,7 +226,7 @@ a, body {
 	}
 	#first-slide p, #second-slide p, #third-slide p, #fouth-slide p, h1, h2, h3, h4, h5, h6 {
 		text-align: center;
-		font-size: 1em;
+		font-size: 1.2em;
 	}
 	#first-slide h1, #second-slide h1,   #third-slide h1, #fouth-slide h1{
 		font-size: 1.8em;
