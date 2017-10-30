@@ -51,6 +51,12 @@ li#menu-item-contact.active {
 	min-height: 100%;
 }
 
+@media (max-width: 768px) {
+	.about-us, .contact-us, .what-we-do, .our-history {
+		min-height: 0;
+	}
+}
+
 body, a {
 	color: white;
 	box-sizing: border-box;
@@ -68,10 +74,15 @@ body, a {
 
 @media (max-width: 768px) {
 	#left-sidebar {
+		display: block;
 		position: relative;
-		height: 210px;
+		height: auto;
 		width: 100%;
-		background: linear-gradient(to bottom, rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.5) 70%,rgba(0,0,0,0.5) 100%);
+		background-color: rgba(0,0,0,0.3);
+	}
+	#left-sidebar a {
+		font-size: 1.25em;
+		line-height: 45px;
 	}
 }
 .logo img {
@@ -85,8 +96,17 @@ body, a {
 #mobile-menu-icon span {
 	display: block;
 	text-align: center;
-	font-size: 1.4em;
+	font-size: 2.5em;
 	color: #c9c9c9;
+	height: 50px;
+	line-height: 45px;
+	transition: all 0.4s;
+
+}
+
+#mobile-menu-icon span:hover {
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
 }
 
 .about-us h1, .our-history h1, .what-we-do h1, .contact-us h1 {
@@ -115,13 +135,32 @@ body, a {
   display: table-cell;
   vertical-align: middle;
 }
-
+@media (max-width: 768px) {
+	.vcenter {
+		display: block;
+	}
+	.vcenter .row {
+		display: block;
+		vertical-align: none;
+	}
+}
+#about-us {
+	margin-bottom: 25px;
+}
 .button {
 	padding: 1em 2em;
 	border: 1px solid white;
 	border-radius: 0;
 }
-.button a{
+@media (max-width: 768px) {
+	.button {
+		padding: 0.5em 1em;
+	}
+	.button  {
+		font-size: 14px;
+	}
+}
+.button {
 	text-decoration: none;
 	color: #fff;
 }
@@ -196,6 +235,27 @@ a, body {
 	}
 }
 
-#second-slide *, #fouth-slide *  {
-	padding: 0;
+
+@media (max-width: 768px) {
+	#first-slide, #second-slide, #third-slide, #fouth-slide {
+		padding: 0 5%;
+	}
+	p {
+		font-size: 10px;
+	}
+	h1 {
+		font-size: 12px
+	}
+	#fouth-slide a {
+		font-size: 1.2em;
+	}
+}
+
+@media (max-width: 768px) {
+	body  {
+		font-size: 12px;
+	}
+	h1* {
+		font-size: 1em;
+	}
 }
