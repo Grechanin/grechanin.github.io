@@ -242,10 +242,10 @@ a, body {
 		padding: 0 5%;
 	}
 	p {
-		font-size: 10px;
+		font-size: 14px;
 	}
 	h1 {
-		font-size: 12px
+		font-size: 1.2em;
 	}
 	#fouth-slide a {
 		font-size: 1.2em;
@@ -254,9 +254,9 @@ a, body {
 
 @media (max-width: 768px) {
 	body  {
-		font-size: 12px;
+		font-size: 14px;
 	}
 	h1* {
-		font-size: 1em;
+		font-size: 1.2em;
 	}
 }
