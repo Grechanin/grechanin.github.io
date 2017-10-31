@@ -200,8 +200,18 @@ body, a {
 
 
 .nav>li>a:hover {
-	background: rgba(0,0,0,0.4);
+	background: rgba(0,0,0,0.6);
 	color: #fff;
+}
+.nav>li>a:active {
+	background: none;
+}
+.nav>li>a:visited {
+	background: none;
+	color: #fff;
+}
+.nav>li>a:focus {
+	background: initial;
 }
 
 .nav>li>a {
@@ -211,9 +221,10 @@ body, a {
 	padding: 7px 10px;
 }
 
-li.active>a {
-	background: rgba(0,0,0,0.2);
+.active>a {
+	background: rgba(0,0,0,0.4) !important;
 	font-weight: bold;
+	color: white;
 }
 
 a, body {
@@ -241,10 +252,11 @@ a, body {
 	#first-slide, #second-slide, #third-slide, #fouth-slide {
 		padding: 0 5%;
 	}
-	p {
+
+	p* {
 		font-size: 14px;
 	}
-	h1 {
+	h1* {
 		font-size: 1.2em;
 	}
 	#fouth-slide a {
