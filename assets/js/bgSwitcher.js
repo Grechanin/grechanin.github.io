@@ -1,6 +1,5 @@
 $(document).ready(function() {
   $(document).scroll(function() {
-var bg = "url(../img/bg04.jpg)";
     if ($(document).scrollTop() < $(window).height()) {
     $('#outer-background-image').css({'background-image': 'url(../img/bg01.jpg)', 'transition': '1s'});
  }
