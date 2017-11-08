@@ -229,6 +229,7 @@ a:focus {
 	background: rgba(0,0,0,0.4) !important;
 	font-weight: bold;
 	color: white;
+	transition: 3s;
 }
 
 a, body {
