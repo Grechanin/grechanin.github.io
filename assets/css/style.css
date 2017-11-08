@@ -104,7 +104,10 @@ body, a {
 	transition: all 0.4s;
 
 }
-
+a:focus {
+    color: #fff; 
+    text-decoration: none; 
+}
 #mobile-menu-icon span:hover {
 	background-color: rgba(0,0,0,0.5);
 	color: #fff;
@@ -170,6 +173,7 @@ body, a {
 	color: black;
 	background-color: #fff;
 	transition: 0.5s;
+	cursor: pointer;
 }
 
 .grid p {
@@ -276,4 +280,75 @@ a, body {
 	color: #fff;
 	font-weight: bold;
 	transition: all 0.4s;
+}
+
+@media (min-width: 768px) {
+	#footer {
+	    position: fixed;
+	    bottom: 10px;
+	    left: 3%;
+	    margin: 10px 0;
+	    width: 13%;
+	    max-width: 150px;
+	    min-width: 150px;
+	    text-align: center;
+	    background: none;
+	    z-index: 0;
+	    padding: 0;
+	}
+}
+
+
+@media (min-width: 992px) {
+		#footer {
+		    left: 6.5%;
+		    max-width: 205px;
+		    min-width: 190px;
+		}
+}
+#footer {
+    display: block;
+    padding: 15px 5px;
+    text-align: center;
+    font-size: 0.6em;
+}
+
+#go-to-top {
+    display: block;
+    position: fixed;
+    bottom: 5px;
+    left: auto;
+    right: 5px;
+    cursor: default;
+    z-index: 100;
+    outline: none;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+#go-to-top .icon {
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+
+#go-to-top.active {
+    cursor: pointer;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+@media (min-width: 768px){ 
+	#go-to-top {
+	    left: 5px;
+	    right: auto;
+	}
+}
+
+#go-to-top.active:hover {
+	opacity: 1;
+	bottom: 10px;
 }
